@@ -1,0 +1,124 @@
+.app {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.todo-input {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.todo-input input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.todo-input button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #0078d4;
+  color: white;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-input button:hover {
+  background-color: #005a9e;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.tab.active {
+  background-color: #0078d4;
+  color: white;
+  border-color: #0078d4;
+}
+
+.tab:hover {
+  background-color: #e6f0fa;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+.todo-item:hover {
+  background-color: #f5f8ff;
+}
+
+.todo-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.todo-content i {
+  color: #0078d4;
+  font-size: 1.2rem;
+}
+
+.todo-item.completed .todo-content span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.action-group {
+  display: flex;
+  gap: 10px;
+}
+
+.action-group button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #555;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.action-group button:hover {
+  color: #0078d4;
+}
